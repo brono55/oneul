@@ -49,23 +49,24 @@ $(".box").click(function () {
 	var good = $(this).index();
 	$(".box").removeClass("active");
 	$(".box").eq(good).toggleClass("active");
+	var swiper = new Swiper(".sub-swiper-1", {
+		cssMode: true,
+		loop: true,
+		observer: true,
+		observeParents: true,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		mousewheel: true,
+		keyboard: true,
+	});
 });
 
-var swiper = new Swiper(".sub-swiper-1", {
-	cssMode: true,
-	loop: true,
-	observer: true,
-	observeParents: true,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	pagination: {
-		el: ".swiper-pagination",
-	},
-	mousewheel: true,
-	keyboard: true,
-});
+
 
 
 $(document).ready(function () {

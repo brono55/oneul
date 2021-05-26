@@ -123,7 +123,7 @@ header.active {
 .logo {
   width: 170px;
   height: 60px;
-  background: url(/images/logo_on.png);
+  background: url(../images/logo_on.png);
   position: absolute;
   left: 30px;
 }
@@ -246,26 +246,26 @@ header .nav-list > ul > li a.active {
 }
 
 .sc01-img01 {
-  background-image: url(/images/visual01.jpg);
+  background-image: url(../images/visual01.jpg);
 }
 .sc01-img02 {
-  background-image: url(/images/visual02.jpg);
+  background-image: url(../images/visual02.jpg);
 }
 
 .sc01-img03 {
-  background-image: url(/images/visual03.jpg);
+  background-image: url(../images/visual03.jpg);
 }
 
 .sc01-img04 {
-  background-image: url(/images/visual04.jpg);
+  background-image: url(../images/visual04.jpg);
 }
 
 .sc01-img05 {
-  background-image: url(/images/visual05.jpg);
+  background-image: url(../images/visual05.jpg);
 }
 
 .sc01-img06 {
-  background-image: url(/images/visual06.jpg);
+  background-image: url(../images/visual06.jpg);
 }
 
 .swiper-slide .txt-box {
@@ -353,7 +353,6 @@ header .nav-list > ul > li a.active {
 .section02-wrap {
   width: 100%;
   max-width: 1700px;
-  height: 500px;
   margin: 0 auto;
   margin-top: 130px;
 }
@@ -366,7 +365,6 @@ header .nav-list > ul > li a.active {
 }
 .mi-textbox {
   width: 50%;
-  height: 100%;
   padding: 10px 10px 10px 9.7%;
   margin-top: 65px;
   text-align: justify;
@@ -392,8 +390,8 @@ header .nav-list > ul > li a.active {
 
 .mi-img {
   width: 50%;
-  height: 100%;
-  background-image: url(/images/mi_img01.jpg);
+  height: 500px;
+  background-image: url(../images/mi_img01.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -448,7 +446,7 @@ header .nav-list > ul > li a.active {
   font-weight: bold;
 }
 .txtBox .icon-plus {
-  background-image: url(/images/mn_plus.png);
+  background-image: url(../images/mn_plus.png);
   background-size: auto;
   position: absolute;
   top: 25px;
@@ -477,7 +475,7 @@ header .nav-list > ul > li a.active {
   .swiper-wrapper
   .swiper-slide
   .card-inner {
-  width: 100%;
+  width: 500px;
   overflow: hidden;
 }
 .imgCardSlider-wrap
@@ -486,7 +484,8 @@ header .nav-list > ul > li a.active {
   .swiper-slide
   .card-inner
   img {
-  transition: 0.3s;
+  height: 100%;
+  transition:.5s;
 }
 .imgCardSlider-wrap
   .swiper-container
@@ -494,7 +493,6 @@ header .nav-list > ul > li a.active {
   .swiper-slide
   .card-inner
   img:hover {
-  width: 100%;
   display: block;
   transform: scale(1.1);
 }
@@ -657,16 +655,16 @@ header .nav-list > ul > li a.active {
   display: block;
 }
 .scslider-wrap > .box .box-bg01 {
-  background-image: url(/images/mh_img01.jpg);
+  background-image: url(../images/mh_img01.jpg);
 }
 .scslider-wrap > .box .box-bg02 {
-  background-image: url(/images/mh_img02.jpg);
+  background-image: url(../images/mh_img02.jpg);
 }
 .scslider-wrap > .box .box-bg03 {
-  background-image: url(/images/mh_img03.jpg);
+  background-image: url(../images/mh_img03.jpg);
 }
 .scslider-wrap > .box .box-bg04 {
-  background-image: url(/images/mh_img04.jpg);
+  background-image: url(../images/mh_img04.jpg);
 }
 .scslider-wrap > .box.active > .box-bg {
   display: none;
@@ -766,7 +764,7 @@ header .nav-list > ul > li a.active {
 
 .map-info .map-box .map-img {
   width: 30%;
-  background: url(/images/mi_bg.jpg) no-repeat 10% 90%;
+  background: url(../images/mi_bg.jpg) no-repeat 10% 90%;
   background-size: auto 100%;
 }
 
@@ -798,12 +796,12 @@ header .nav-list > ul > li a.active {
 }
 
 .map-info .map-box .map-txt .line-box.tel {
-  background: url(/images/icon_tel.png) no-repeat center left;
+  background: url(../images/icon_tel.png) no-repeat center left;
   width: 100%;
 }
 
 .map-info .map-box .map-txt .line-box.time {
-  background: url(/images/icon_time.png) no-repeat center left;
+  background: url(../images/icon_time.png) no-repeat center left;
   width: 100%;
 }
 
@@ -826,7 +824,7 @@ header .nav-list > ul > li a.active {
 
 .footer-info {
   position: relative;
-  background: url(/images/logo_f.png) no-repeat left top;
+  background: url(../images/logo_f.png) no-repeat left top;
   background-size: auto;
   color: #b1b7bd;
   padding-left: 462px;
@@ -890,7 +888,7 @@ header .nav-list > ul > li a.active {
   transform: translate(-50%, -50%);
 }
 .footer-info .right-menu .fr-btn .icon-insta {
-  background-image: url(/images/insta.png);
+  background-image: url(../images/insta.png);
   width: 32px;
   height: 32px;
 }
@@ -955,7 +953,7 @@ header .nav-list > ul > li a.active {
   /* border-radius: 3em; */
   font-weight: 400;
   padding-right: 45px;
-  background: #c27a34 url(/images/icon_fad.png) no-repeat left top;
+  background: #c27a34 url(../images/icon_fad.png) no-repeat left top;
   background-size: auto;
   background-position: 155px center;
   transition: .5s;
@@ -973,6 +971,9 @@ header .nav-list > ul > li a.active {
 
 /* 반응형 */
 @media (max-width: 1550px) {
+
+ 
+
   .imgCardSlider-wrap {
     padding: 0 100px;
   }
@@ -981,5 +982,27 @@ header .nav-list > ul > li a.active {
   }
   .imgCardSlider-wrap .btn-prev {
     left: 30px;
+  }
+}
+
+@media (max-width: 1220px){
+  .nav-list{
+    display: none;
+  }
+  .section02-wrap{
+    height: 500px;
+    margin-top:20px;
+  }
+  .mi{
+    display: block;
+    height: 50%;
+  }
+  .mi-textbox{
+    width: 100%;
+  }
+
+  .mi-img{
+    width: 100%;
+    padding-bottom:20%;
   }
 }

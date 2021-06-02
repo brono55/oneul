@@ -1,5 +1,3 @@
-@import url("https://fo nts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap");
-/*Global styles*/
 *,
 *::before,
 *::after {
@@ -18,6 +16,18 @@
   font-family: "국립박물관문화재단클래식B";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff")
     format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: '국립박물관문화재단클래식B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -68,12 +78,13 @@ ul li {
 .color {
   color: #c59d5f;
 }
-.mt-15{
-  margin-top:15px;
+.mt-15 {
+  margin-top: 15px;
 }
 .mg-100 {
   margin-top: 100px;
 }
+
 .container {
   width: 100%;
   max-width: 1700px;
@@ -95,6 +106,8 @@ header {
   left: 0;
   z-index: 1500;
   box-sizing: border-box;
+  background-color:#e7e7e7;
+  transition: .4s;
 }
 header .header-wrap {
   display: flex;
@@ -107,7 +120,7 @@ header .header-wrap {
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px;
+  padding: 10px;
   z-index: 1500;
 }
 
@@ -117,7 +130,7 @@ header .header-wrap {
 
 header.active {
   background-color: rgb(211, 203, 135, 0.9);
-  height: 100px;
+  height: 50px;
 }
 
 .logo {
@@ -143,6 +156,10 @@ header .nav-list > ul > li {
   text-align: center;
   padding: 5px;
   text-align: center;
+}
+
+header .nav-list > ul > li a{
+  color:black;
 }
 
 header .nav-list > ul > li a.active {
@@ -174,7 +191,7 @@ header .nav-list > ul > li a.active {
 }
 
 .fa-bars {
-  color: white;
+  color: black;
 }
 
 .menu-toggle > .fa-times {
@@ -231,7 +248,8 @@ header .nav-list > ul > li a.active {
   color: var(--secondary-font-color);
 }
 
-/*Hero start*/
+
+/*--  Hero start -  section01-- */
 .container01 {
   display: block;
 }
@@ -268,60 +286,71 @@ header .nav-list > ul > li a.active {
   background-image: url(../images/visual06.jpg);
 }
 
-.swiper-slide .txt-box {
-  position: absolute;
-  font-size: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.swiper-slide > .sc01-img {
+  width: 100%;
+}
+.swiper-slide > .sc01-img img {
+  width: 100%;
+} 
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box {
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50% , -50%);
   color: white;
-  transition: 0.5s;
-  /* animation: good;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; */
-  opacity: 0;
-  transform: translateX(100px);
-}
-.swiper-slide.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-@keyframes good {
-  0% {
-    top: 20%;
-    opacity: 0;
-  }
-  100% {
-    top: 50%;
-    opacity: 1;
-  }
+  transition: all 1s;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide .sc01-img {
+.sc01-wrap .swiper-container .swiper-slide .sc01-img01 .txt-box{
+  color:white;
+  line-height: 25px;
   width: 100%;
 }
-.swiper-slide .sc01-img img {
-  width: 100%;
+
+.sc01-wrap .swiper-container .swiper-slide  .txt-box{
+  line-height: 60px;
 }
+
+.sc01-wrap .swiper-container .swiper-slide .sc01-img01 .txt-box .md-mg{
+  padding-top:20px;
+}
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box{
+  text-align: center;
+  font-family: '국립박물관문화재단클래식B';
+}
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box .tp-txt{
+  font-size:85px;
+}
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box .md-txt{
+  font-size:21px;
+  margin-top:15px;
+  font-family: 'Cafe24SsurroundAir';
+}
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box .bm-txt{
+  font-size:14px;
+  font-family: 'Cafe24SsurroundAir';
+}
+
+.sc01-wrap .swiper-container .swiper-slide .txt-box .tp-txt img{
+  width: auto;
+  max-width: 100%;
+}
+.sc01-wrap .swiper-container .swiper-slide-active .txt-box {
+  transition: all 1s;
+  top : 55%;
+}
+
 
 /* 슬라이더 기초 세팅 끝 */
 
 /* 커스텀 시작 */
 /* 좌우 버튼 시작 */
+
 .sc01-wrap .btn-prev,
 .sc01-wrap .btn-next {
   content: "";
@@ -358,7 +387,7 @@ header .nav-list > ul > li a.active {
 }
 .mi {
   width: 100%;
-  height: 100%;
+  padding-bottom: 20%;
   display: flex;
   padding: 20px;
   box-sizing: border-box;
@@ -390,16 +419,16 @@ header .nav-list > ul > li a.active {
 
 .mi-img {
   width: 50%;
-  height: 500px;
+  padding-bottom: 20%;
   background-image: url(../images/mi_img01.jpg);
   background-size: cover;
   background-position: center;
 }
 
 /* section03 */
-
 .main-menu .main-titbox {
   text-align: center;
+  margin-top:50px
 }
 
 .card-inner {
@@ -458,8 +487,7 @@ header .nav-list > ul > li a.active {
 .imgCardSlider-wrap {
   width: 100%;
   max-width: 1700px;
-  margin: 100px auto;
-  padding: 20px;
+  margin: 50px auto;
 }
 
 .imgCardSlider-wrap {
@@ -470,29 +498,15 @@ header .nav-list > ul > li a.active {
   margin-top: 70px;
 }
 /* 이미지 */
-.imgCardSlider-wrap
-  .swiper-container
-  .swiper-wrapper
-  .swiper-slide
-  .card-inner {
-  width: 500px;
+.imgCardSlider-wrap .swiper-container .swiper-wrapper .swiper-slide .card-inner {
+  /* width: 500px; */
   overflow: hidden;
 }
-.imgCardSlider-wrap
-  .swiper-container
-  .swiper-wrapper
-  .swiper-slide
-  .card-inner
-  img {
+.imgCardSlider-wrap .swiper-container .swiper-wrapper .swiper-slide .card-inner img {
   height: 100%;
-  transition:.5s;
+  transition: 0.5s;
 }
-.imgCardSlider-wrap
-  .swiper-container
-  .swiper-wrapper
-  .swiper-slide
-  .card-inner
-  img:hover {
+.imgCardSlider-wrap .swiper-container .swiper-wrapper .swiper-slide .card-inner img:hover {
   display: block;
   transform: scale(1.1);
 }
@@ -501,23 +515,6 @@ header .nav-list > ul > li a.active {
 .imgCardSlider-wrap .swiper-container .swiper-wrapper .swiper-slide .card-inner .txtBox {
   width: 100%;
   text-align: center;
-}
-
-/* 네비게이션 추가를 원할 시 이렇게 하면 된다. span으로 디자인 바꾸기 */
-.swiper-pagination {
-  position: absolute;
-  z-index: 99;
-  bottom: -50px;
-  display: flex;
-  justify-content: center;
-  margin-left: -100px;
-  width: 100%;
-}
-.swiper-pagination > span {
-  background-color: orange;
-  width: 30px;
-  height: 5px;
-  margin: 5px;
 }
 
 /* section03 end */
@@ -533,6 +530,9 @@ header .nav-list > ul > li a.active {
 .mp .mp-item {
   width: 50%;
   position: relative;
+}
+.mp .mp-item .no1 {
+  display: none;
 }
 
 .mp .mp-item .mp-img {
@@ -622,88 +622,278 @@ header .nav-list > ul > li a.active {
 
 /* section04 end */
 
-/* section-slider */
-
-.scslider-wrap {
-  width: 100%;
-  height: 620px;
-  margin-top: 230px;
-  overflow-y: hidden;
-  display: flex;
-  margin-left: -0.5%;
-  margin-right: -0.5%;
-}
-
-.scslider-wrap > .box {
-  width: 16.666667%;
-  height: 100%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  transition: 0.5s;
-}
-
-.scslider-wrap > .box.active {
-  width: 50%;
-}
-/* box-bg */
-.scslider-wrap > .box .box-bg {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: block;
-}
-.scslider-wrap > .box .box-bg01 {
-  background-image: url(../images/mh_img01.jpg);
-}
-.scslider-wrap > .box .box-bg02 {
-  background-image: url(../images/mh_img02.jpg);
-}
-.scslider-wrap > .box .box-bg03 {
-  background-image: url(../images/mh_img03.jpg);
-}
-.scslider-wrap > .box .box-bg04 {
-  background-image: url(../images/mh_img04.jpg);
-}
-.scslider-wrap > .box.active > .box-bg {
-  display: none;
-}
-/* box 안 slider 영역 */
-.scslider-wrap > .box .sub-swiper-1 {
-  height: 100%;
-  display: none;
-}
-.scslider-wrap > .box.active .sub-swiper-1 {
-  display: block;
-}
-.scslider-wrap > .box .sub-swiper-1 .swiper-slide {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.sub-swiper-1 .swiper-wrapper .swiper-slide img {
-  height: 100%;
-  width: auto !important;
-  display: block;
-}
-
 /* section-slider end*/
 
+.con {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-top: 170px;
+  padding: 20px;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-grid > * {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.width-25p {
+  width: 25%;
+}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+.height-full {
+  height: 100%;
+}
+
+/* 커스텀 */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1220px) {
+  .con {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.floor-info-box {
+}
+
+.floor-info-box > ul {
+  margin: 0 -10px;
+}
+
+.floor-info-box > ul > li {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.floor-info-box > ul > li > div {
+  position: relative;
+}
+
+.floor-info-box > ul > li > div.on-media-width-small-visible {
+  display: none;
+}
+
+.floor-info-box > ul > li > div > .img-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.floor-info-box > ul > li > div > .img-box::after {
+  content: "";
+  display: block;
+  padding-top: 180%;
+}
+
+.floor-info-box > ul > li > div > .txt-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.floor-info-box > ul > li > div > .txt-box > .floor {
+  font-size: 3rem;
+  font-family: '국립박물관문화재단클래식B';
+}
+
+.floor-info-box > ul > li > div > .txt-box > .des {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: '국립박물관문화재단클래식B';
+}
+
+@media (min-width: 1025px) {
+  .floor-info-box > ul > li:not(.active) {
+    width: calc(50% / 3);
+  }
+
+  .floor-info-box > ul > li.active {
+    width: 50%;
+  }
+
+  .floor-info-box > ul > li.active > div.on-media-width-big-visible {
+    height: 100%;
+    background-color: gray;
+  }
+
+  .floor-info-box > ul > li.active > div.on-media-width-big-visible > .img-box,
+  .floor-info-box > ul > li.active > div.on-media-width-big-visible > .txt-box {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .floor-info-box > ul > li {
+    width: 50%;
+  }
+
+  .floor-info-box > ul > li > div.on-media-width-big-visible {
+    display: none;
+  }
+
+  .floor-info-box > ul > li > div.on-media-width-small-visible {
+    display: block;
+  }
+
+  .floor-info-box > ul > li > div > .img-box::after {
+    padding-top: 73.8095%;
+  }
+}
+
+@media (max-width: 768px) {
+  .floor-info-box > ul > li {
+    width: 100%;
+  }
+}
+
+.slider-box-1 .swiper-slide > .img-box {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-box-1__content-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.slider-box-1__content-box .swiper-pagination {
+  position: static;
+}
+
+.slider-box-1__content-box .floor {
+  font-size: 3rem;
+}
+
+.slider-box-1__content-box .des {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider-box-1__content-box .des2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  word-break: keep-all;
+}
+
+.slider-box-1__content-box .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.slider-box-1__content-box
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  width: 100%;
+  display: block;
+  height: 5px;
+  background-color: white;
+}
+
+.slider-box-1__btn-pause {
+  transform: scale(1.2);
+}
+
+.slider-box-1__btn-pause,
+.slider-box-1__btn-resume {
+  display: block;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.autoplay-stoped .slider-box-1__btn-pause {
+  display: none;
+}
+
+.autoplay-started .slider-box-1__btn-resume {
+  display: none;
+}
+
+.slider-box-1__btn-more {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.slider-box-1__btn-more > span:last-child {
+  margin-left: 0.5rem;
+  display: inline-block;
+  animation-name: left-and-right;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes left-and-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
 /* section05 */
 
 .main-insta {
   width: 100%;
   max-width: 1700px;
-  margin-top: 250px;
-  padding: 50px;
+  margin-top: 150px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-insta .insta-image {
   width: 25%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .insta-image a .insta {
@@ -731,9 +921,10 @@ header .nav-list > ul > li a.active {
 .map-wrap {
   position: relative;
   width: 100%;
+  padding-bottom: 800px;
   max-width: 100%;
-  height: 600px;
-  margin-top:50px;
+  margin-top: 150px;
+  background-color: #f5f5f5;
 }
 
 #map {
@@ -751,7 +942,7 @@ header .nav-list > ul > li a.active {
 
 .map-info .map-box {
   position: relative;
-  top: 30px;
+  top: 150px;
   z-index: 111;
   width: 100%;
   max-width: 850px;
@@ -772,6 +963,14 @@ header .nav-list > ul > li a.active {
   width: 70%;
   padding: 60px;
   padding-bottom: 20px;
+}
+
+.map-info .map-box .map-txt .bigft {
+  font-size: 34px;
+}
+
+.map-info .map-box .map-txt .mp-ft {
+  font-size: 24px;
 }
 
 .map-info .map-box .map-txt .mg-15 {
@@ -798,11 +997,13 @@ header .nav-list > ul > li a.active {
 .map-info .map-box .map-txt .line-box.tel {
   background: url(../images/icon_tel.png) no-repeat center left;
   width: 100%;
+  font-size: 15px;
 }
 
 .map-info .map-box .map-txt .line-box.time {
   background: url(../images/icon_time.png) no-repeat center left;
   width: 100%;
+  font-size: 15px;
 }
 
 /* map-infomation  end*/
@@ -833,24 +1034,24 @@ header .nav-list > ul > li a.active {
   font-weight: 200;
 }
 
-.footer-info .li-16{
+.footer-info .li-16 {
   line-height: 1.6;
 }
 
-.footer-info .color-2{
-  color:#cec0b5;
+.footer-info .color-2 {
+  color: #cec0b5;
 }
 
-.footer-info .color-3{
-  color:#aa988a;
+.footer-info .color-3 {
+  color: #aa988a;
 }
 
-.footer-info > p{
-  font-size:1.6rem;
+.footer-info > p {
+  font-size: 1.6rem;
 }
 
-.footer-info .copyright{
-  color:#786659;
+.footer-info .copyright {
+  color: #786659;
 }
 
 .footer-info .right-menu {
@@ -858,6 +1059,7 @@ header .nav-list > ul > li a.active {
   top: 0;
   right: 0;
   width: 364px;
+  display: flex;
 }
 
 .footer-info .right-menu .fr-a {
@@ -899,17 +1101,15 @@ header .nav-list > ul > li a.active {
 }
 
 .footer-info .right-menu .family-site-box {
-  display: inline-block;
+  display: block;
   margin: 0 10px;
   position: relative;
   width: 200px;
-  vertical-align: middle;
-  
 }
 
 .footer-info .right-menu .family-site-box.on ul {
   display: block;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .footer-info .right-menu .family-site-box p {
@@ -932,7 +1132,7 @@ header .nav-list > ul > li a.active {
 
 .footer-info .right-menu .family-site-box ul {
   display: none;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .footer-info .right-menu .family-site-box ul li {
@@ -949,6 +1149,7 @@ header .nav-list > ul > li a.active {
 }
 
 .footer-info .right-menu .family-site-box .fs-btn {
+  position: absoulte;
   display: block;
   /* border-radius: 3em; */
   font-weight: 400;
@@ -956,12 +1157,8 @@ header .nav-list > ul > li a.active {
   background: #c27a34 url(../images/icon_fad.png) no-repeat left top;
   background-size: auto;
   background-position: 155px center;
-  transition: .5s;
-  cursor:default;
-}
-
-.family-site{
-   
+  transition: 0.5s;
+  cursor: default;
 }
 
 .family-site li span {
@@ -972,37 +1169,356 @@ header .nav-list > ul > li a.active {
 /* 반응형 */
 @media (max-width: 1550px) {
 
- 
-
-  .imgCardSlider-wrap {
-    padding: 0 100px;
-  }
   .imgCardSlider-wrap .btn-next {
     right: 30px;
   }
   .imgCardSlider-wrap .btn-prev {
     left: 30px;
   }
+
+  .footer-info{
+    padding-left: 0;
+    padding-top: 80px;
+  }
+
 }
 
-@media (max-width: 1220px){
-  .nav-list{
+@media (max-width: 1220px) {
+  .nav{
+    padding:40px;
+  }
+  .nav-list {
     display: none;
   }
-  .section02-wrap{
+  .section02-wrap {
     height: 500px;
-    margin-top:20px;
+    margin-top: 20px;
   }
-  .mi{
+
+  .footer{
+    padding-top:100px;
+  }
+  
+ 
+
+}
+
+@media (max-width: 1024px) {
+  
+  .sc01-img {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .mi {
+    width: 100%;
     display: block;
-    height: 50%;
   }
-  .mi-textbox{
+  .mi-textbox {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mi-subtext > .mo-none {
+    display: none;
+  }
+
+  .mi-img {
+    width: 100%;
+    padding-bottom: 50%;
+  }
+
+  .main-menu {
+    padding-top: 250px;
+  }
+
+  .mp {
+    display: block;
+  }
+
+  .mp .mp-item {
+    margin-top: 120px;
+  }
+
+  .mp .mp-item .no1 {
+    display: block;
+    text-align: center;
+  }
+
+  .mp .mp-item .no2 {
+    display: none;
+  }
+
+  .mp .mp-item .mp-txt {
+    width: 100%;
+    max-width: 425px;
+    position: absolute;
+    left: 360px;
+    bottom: 0;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: -100px;
+    margin-top: -100px;
+  }
+
+  .mp .mp-item .mp-txt-right {
+    width: 100%;
+    max-width: 425px;
+    position: absolute;
+    left: 360px;
+    bottom: 0;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: -100px;
+    margin-top: -100px;
+    text-align: left;
+  }
+
+  .mp-txt-right ul li::before {
+    content: "";
+    background: #c27a34;
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 10px;
+    left: -10px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .main-insta .insta-image {
+    width: 30%;
+  }
+
+  .map-wrap {
+    padding: 323px 0 105px;
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 20%;
+  }
+
+  .map-info .map-box {
+    position: relative;
+    top: -150px;
+    z-index: 111;
+    width: 100%;
+    max-width: 650px;
+    height: 500px;
+    float: right;
+    background: #fff;
+  }
+
+  .map-info .map-box {
+    width: 96%;
+    display: block;
+    position: relative;
+  }
+
+  .map-info .map-box .map-img {
+    width: 100%;
+    height: 257px;
+    background-size: 100% auto;
+  }
+
+  .map-info .map-box .map-txt {
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 20px;
+  }
+
+  .footer-wrap {
+    margin-top: 400px;
+  }
+
+  .footer-info .right-menu {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 364px;
+  }
+
+  .footer-info{
+    background-position: center top;
+  }
+
+  .footer-info p{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .imgCardSlider-wrap .swiper-slide:nth-last-of-type(2n-1) {
+    margin-top: 0px;
+  }
+  .mp {
+    padding: 0px;
+  }
+  .mp .mp-item {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .mp .mp-item .mp-img {
     width: 100%;
   }
 
-  .mi-img{
+  .mp .mp-item .mp-img img {
     width: 100%;
-    padding-bottom:20%;
   }
+
+  .mp .mp-item .mp-txt {
+    width: 90%;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    margin-bottom: -100px;
+    margin-top: -100px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .mp .mp-item .mp-txt-right {
+    width: 90%;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    margin-bottom: -100px;
+    margin-top: -100px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .mp-box .p-1 {
+    font-size: 15px;
+    color: #c59d5f;
+    font-weight: 400;
+  }
+  .mp-box .p-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .mp-box .p-3 {
+    font-size: 14px;
+  }
+
+  .map-info .map-box .map-txt .bigft {
+    font-size: 27px;
+  }
+
+  .map-info .map-box .map-txt .ft {
+    font-size: 14px;
+  }
+
+  .map-info .map-box .map-txt .line-box.tel {
+    font-size: 14px;
+  }
+
+  .map-info .map-box .map-txt .line-box.time {
+    font-size: 13px;
+  }
+
+  .main-insta {
+    padding: 0;
+  }
+
+  .main-insta .insta-image {
+    width: 50%;
+    padding: 4px;
+  }
+
+  .footer-info{
+    background-size:213px;
+  }
+  
+  .footer-info p{
+    font-size:15px;
+  }
+
+  .footer-info .mo-none{
+    display: none;
+  }
+  .footer-wrap {
+    margin-top: 440px;
+  }
+
+  
+}
+
+@media (max-width: 420px) {
+  .mi-subtext {
+    font-size: 11px;
+  }
+
+  .mp-box .p-1 {
+    font-size: 12px;
+    color: #c59d5f;
+    font-weight: 400;
+  }
+  .mp-box .p-2 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .mp-box .p-3 {
+    font-size: 13px;
+  }
+
+  .mp .mp-item .mp-txt ul li {
+    font-size: 1px;
+    line-height: 12px;
+  }
+
+  .mp .mp-item .mp-txt-right ul li {
+    font-size: 1px;
+    line-height: 12px;
+  }
+
+  .main-insta .insta p {
+    font-size: 0.6rem;
+  }
+
+  .map-info .map-box .map-txt .ft {
+    font-size: 10px;
+  }
+
+  .footer-info{
+    background-size:163px;
+  }
+  
+  .footer-info .right-menu{
+    margin-left:40px;
+  }
+
+  .footer-info p{
+    font-size:12px;
+  }
+
+  .footer-info{
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .footer-info .right-menu .fr-a{
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-info .right-menu .fr-btn{
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-info .right-menu .family-site-box{
+    width: 180px;
+    margin:0;
+  }
+
 }

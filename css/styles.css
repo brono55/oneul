@@ -309,7 +309,7 @@ header .nav-list > ul > li a.active {
 }
 
 .sc01-wrap .swiper-container .swiper-slide  .txt-box{
-  line-height: 60px;
+  line-height: 42px;
 }
 
 .sc01-wrap .swiper-container .swiper-slide .sc01-img01 .txt-box .md-mg{
@@ -322,7 +322,7 @@ header .nav-list > ul > li a.active {
 }
 
 .sc01-wrap .swiper-container .swiper-slide .txt-box .tp-txt{
-  font-size:85px;
+  font-size:55px;
 }
 
 .sc01-wrap .swiper-container .swiper-slide .txt-box .md-txt{
@@ -722,7 +722,7 @@ body {
 }
 
 .floor-info-box > ul > li > div > .txt-box > .floor {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: '국립박물관문화재단클래식B';
 }
 
@@ -1352,6 +1352,18 @@ body {
     text-align: center;
   }
 
+  .sc01-wrap .btn-prev, .sc01-wrap .btn-next{
+    top:40%;
+  }
+
+  .sc01-wrap .btn-prev{
+    left:50px;
+  }
+
+  .sc01-wrap .btn-next{
+    right: 50px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1520,5 +1532,28 @@ body {
     width: 180px;
     margin:0;
   }
+
+  .sc01-wrap .btn-prev{
+    display: none;
+  }
+
+  .sc01-wrap .btn-next{
+    display: none;
+  }
+
+  .sc01-wrap .swiper-container .swiper-slide .txt-box .tp-txt{
+    font-size:35px;
+  }
+
+  .sc01-wrap .swiper-container .swiper-slide .txt-box .md-txt{
+    font-size:14px;
+    line-height: 30px;
+  }
+
+  .sc01-wrap .swiper-container .swiper-slide .txt-box .bm-txt{
+    font-size:13px;
+    line-height: 20px;;
+  }
+
 
 }
